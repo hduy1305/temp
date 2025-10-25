@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "6119db81-f359-43d6-b23e-f33b296bd9a3",
+		"name": "Test API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45028595",
+		"_collection_link": "https://duyhoang-4645930.postman.co/workspace/duy-hoang's-Workspace~5b5407bf-8e93-429d-883b-2b076e1237d3/collection/45028595-6119db81-f359-43d6-b23e-f33b296bd9a3?action=share&source=collection_link&creator=45028595"
+	},
+	"item": [
+		{
+			"name": "get patients record/ patient service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/record/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"record",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "make appointment/appointment_service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"patient_id\": 1,\r\n  \"doctor_id\": 1,\r\n  \"date\": \"2025-10-31T10:00:00Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/make/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"make",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get doctor/doctor service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8002/doctor/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"doctor",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
